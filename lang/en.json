@@ -1,4 +1,9 @@
 {
     "manual_restart_disabled": "{yellow}Manual server restart is disabled by config.",
-    "restarting_now": "{green}Restarting server now..."
+    "manual_restart_scheduled": "{yellow}Manual restart scheduled. Server will restart in {0} seconds.",
+    "restart_warning": "{yellow}Server will restart in {0} seconds.",
+    "restart_countdown_chat": "{green}Server restarting in {0}...",
+    "restart_countdown_center": "<font color='#ff0000'>Server restarting in {0}...</font>",
+    "restart_now_chat": "{red}Server is restarting now...",
+    "restart_now_center": "<font color='#ff0000'>Server is restarting now...</font>"
 }

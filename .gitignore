@@ -1,0 +1,17 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.cache
+*.nupkg
+*.snupkg
+*.pdb
+*.log
+artifacts/
+TestResults/
+packages/
+*.nuproj
