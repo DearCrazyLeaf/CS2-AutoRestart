@@ -57,7 +57,7 @@ namespace AutoRestart
 
             _Localizer = Localizer;
 
-            AddCommand("css_restart", "Restart the server immediately", (player, info) => RestartCommand(player));
+            AddCommand("css_restartserver", "Restart the server immediately", (player, info) => RestartCommand(player));
             RegisterListener<Listeners.OnMapStart>(OnMapStart);
 
             if (Config.AutoRestartEnabled)
@@ -68,7 +68,7 @@ namespace AutoRestart
 
         private bool HasAdminPermission(CCSPlayerController? player)
         {
-            return player != null && AdminManager.PlayerHasPermissions(player, Config.Flag);
+            return player == null || AdminManager.PlayerHasPermissions(player, Config.Flag);
         }
 
         private void OnMapStart(string mapName)
